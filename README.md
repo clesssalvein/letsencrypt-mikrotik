@@ -31,5 +31,5 @@ git clone https://github.com/clesssalvein/letsencrypt-mikrotik.git
 * "start.sh" contains variables and starts certbot with auth script "mikrotik-auth.sh" and postscript "mikrotik-cleanup.sh"
 * "mikrotik-auth.sh" starts "mikrotik-add-dns-entry.php", which put to mikrotik dns server TXT entry with certbot validation string
 * certbot validates text string
-* after successfull validation certbot generates a certificate and dowbloads it to the local directory /etc/letsencrypt
+* after successfull validation certbot generates a certificate and downloads it to the local directory /etc/letsencrypt
 * "mikrotik-cleanup.sh" starts "mikrotik-del-dns-entry.php", which delete TXT entry with certbot validation string at mikrotik dns server
